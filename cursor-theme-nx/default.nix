@@ -23,8 +23,8 @@ let
           dontBuild = true;
 
           installPhase = ''
-            mkdir -p $out/share/themes
-            cp -r $src $out/share/themes/${name}
+            mkdir -p $out/share/icons
+            cp -r $src $out/share/icons/${name}
           '';
         };
       }) themeNames);
